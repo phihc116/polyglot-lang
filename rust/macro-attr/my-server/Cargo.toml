@@ -1,0 +1,6 @@
+[package]
+name = "my-server"
+edition.workspace = true # Dùng chuẩn 2024
+
+[dependencies]
+my-framework = { path = "../my-framework" }
