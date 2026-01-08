@@ -1,1 +1,1 @@
-# # # 
+# # # Chuẩn bị cho training

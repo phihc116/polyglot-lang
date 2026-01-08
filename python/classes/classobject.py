@@ -22,6 +22,9 @@ class MyClass:
     # Code trong class body chạy ngay thời điểm định nghĩa class
     print("Class body is executing: namespace of class is being populated")
 
+class MyOtherClass:
+    pass
+
 # =============================
 # Sau khi kết thúc class body:
 # - MyClass đã trở thành một CLASS OBJECT thật sự
@@ -32,6 +35,9 @@ print("\n--- Class Object Info ---")
 print(MyClass)                # class object
 print(type(MyClass))          # <class 'type'> → class object được tạo bằng metaclass 'type'
 print(MyClass.__doc__)        # docstring của class
+
+print("\n--- Module namespace (globals) ---")
+print(globals())
 
 # __dict__ chứa toàn bộ namespace của class
 print("\nClass namespace:", MyClass.__dict__)
